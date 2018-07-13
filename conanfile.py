@@ -14,7 +14,7 @@ class GperfToolsConan(NxConanFile):
         self.retrieve("1de38ffbdc88bd694d10081865871cd2bfbb02ad8ef9e1606aee18d65532b992",
             [
                 'vendor://nongnu/libunwind/libunwind-{version}.tar.gz'.format(version=self.version),
-                'http://download.savannah.nongnu.org/releases/libunwind/libunwind--{version}.tar.gz'.format(version=self.version)
+                'http://download.savannah.nongnu.org/releases/libunwind/libunwind-{version}.tar.gz'.format(version=self.version)
             ], "libunwind-{v}.tar.gz".format(v = self.version))
 
     def do_build(self):
